@@ -53,22 +53,32 @@ function App() {
     setValue2(0);
     setOperation("");
     setAns("0");
-  }
+  };
   let buttonValues = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
   return (
     <>
       <h1 style={{ textAlign: "center" }}>Simple Calculator</h1>
       <div className="container">
         <div className="sub_container">
-          <div>value 1</div>
-          <h1>{value1}</h1>
-          <h2> {operation} </h2>
-          <div>value 2</div>
-          <h1>{value2}</h1>
-          <div>Answer</div>
-          <h1>{ans}</h1>
+          <div className="input_field">
+            {/* <div>value 1</div> */}
+            <h1>{value1}</h1>
+          </div>
+          <div className="input_field">
+            {/* <div>operation</div> */}
+            <h2> {operation} </h2>
+          </div>
+          <div className="input_field">
+            {/* <div>value 2</div> */}
+            <h1>{value2}</h1>
+          </div>
+
+          <div className="input_field">
+            {/* <div>Answer</div> */}
+            <h1>{ans}</h1>
+          </div>
         </div>
-        <div style={{ margin: "10px 0" }}>
+        <div className="buttons">
           {buttonValues.map((num) => (
             <Button key={num} onClick={() => handleButtonClick(num)}>
               {num}

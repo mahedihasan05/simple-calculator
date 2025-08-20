@@ -1,6 +1,6 @@
 const Button = ({ onClick, children }) => {
 	return (
-		<button onClick={onClick} style={{ margin: '4px', padding: '10px 20px', fontSize: '18px' }}>
+		<button onClick={onClick} style={{ margin: '5px', padding: '20px 10px', fontSize: '24px'}}>
 			{children}
 		</button>
 	);
