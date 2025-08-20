@@ -61,20 +61,20 @@ function App() {
       <div className="container">
         <div className="sub_container">
           <div className="input_field">
-            {/* <div>value 1</div> */}
+            <div>value 1</div>
             <h1>{value1}</h1>
           </div>
           <div className="input_field">
-            {/* <div>operation</div> */}
+            <div>sign</div>
             <h2> {operation} </h2>
           </div>
           <div className="input_field">
-            {/* <div>value 2</div> */}
+            <div>value 2</div>
             <h1>{value2}</h1>
           </div>
 
           <div className="input_field">
-            {/* <div>Answer</div> */}
+            <div>Answer</div>
             <h1>{ans}</h1>
           </div>
         </div>
